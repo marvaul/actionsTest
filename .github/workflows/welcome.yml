@@ -1,4 +1,9 @@
 name: Post welcome comment
 on:
   pull_request:
-    types: []
+    types: [opened]
+jobs:
+  build:
+    name: Post welcome
+    runs-on: ubuntu-latest
+    
